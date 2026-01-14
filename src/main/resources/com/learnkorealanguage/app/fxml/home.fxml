@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="container" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" styleClass="slider-bar" BorderPane.alignment="CENTER">
+         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+            <Label alignment="BASELINE_CENTER" graphicTextGap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="98.0" text="Dashboard">
+               <graphic>
+                  <FontIcon fill="WHITE" iconColor="WHITE" iconLiteral="fas-home" iconSize="20" opacity="0.75" selectionFill="BLACK" selectionStart="0" stroke="BLACK" strokeDashOffset="10.0" strokeLineJoin="BEVEL" strokeMiterLimit="20.0" strokeType="INSIDE" strokeWidth="2.0" textAlignment="CENTER">
+
+                     </FontIcon>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Label>
+         </HBox>
+         <HBox prefHeight="100.0" prefWidth="200.0" />
+         <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0" VBox.vgrow="ALWAYS" />
+         <HBox prefHeight="100.0" prefWidth="200.0" />
+         <HBox prefHeight="100.0" prefWidth="200.0" />
+         <HBox prefHeight="100.0" prefWidth="200.0" />
+         <HBox prefHeight="100.0" prefWidth="200.0" />
+      </VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" styleClass="nav-bar" BorderPane.alignment="CENTER">
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="app-title" text="Easy Korea">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <graphic>
+                  <FontIcon iconLiteral="fas-book-open" iconSize="20" />
+               </graphic>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
