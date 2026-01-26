@@ -17,7 +17,10 @@
          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
             <Label alignment="BASELINE_CENTER" graphicTextGap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="98.0" text="Dashboard">
                <graphic>
-                  <FontIcon fill="WHITE" iconColor="WHITE" iconLiteral="fas-home" iconSize="20" opacity="0.75" selectionFill="BLACK" selectionStart="0" stroke="BLACK" strokeDashOffset="10.0" strokeLineJoin="BEVEL" strokeMiterLimit="20.0" strokeType="INSIDE" strokeWidth="2.0" textAlignment="CENTER"></FontIcon>
+                   <FontIcon fill="WHITE" iconColor="WHITE" iconLiteral="fas-home" iconSize="20" opacity="0.75"
+                             selectionFill="BLACK" selectionStart="0" stroke="BLACK" strokeDashOffset="10.0"
+                             strokeLineJoin="BEVEL" strokeMiterLimit="20.0" strokeType="INSIDE" strokeWidth="2.0"
+                             textAlignment="CENTER"/>
                </graphic>
                <font>
                   <Font name="Arial Bold" size="12.0" />

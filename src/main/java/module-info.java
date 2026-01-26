@@ -14,5 +14,6 @@ module com.learnkorealanguage.app {
     requires org.kordamp.ikonli.fontawesome6;
 
     opens com.learnkorealanguage.app to javafx.fxml;
+    opens com.learnkorealanguage.app.view to javafx.fxml;
     exports com.learnkorealanguage.app;
 }

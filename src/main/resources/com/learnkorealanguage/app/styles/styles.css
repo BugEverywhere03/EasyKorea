@@ -1,10 +1,12 @@
--- Scene
+/* Scene */
 .text {
     -fx-font-size: 20px;
 }
+/* nav-bar */
 .nav-bar {
     -fx-padding: 5px 10px 5px 10px;
 }
+/* app-title */
 .app-title {
     -fx-font-size: 30px;
     -fx-font-weight: bold;
@@ -12,10 +14,12 @@
     -fx-font-family: Consolas;
     -fx-text-alignment: center;
 }
+/* main container */
 .container {
     -fx-padding: 10px 10px 10px 10px;
     -fx-background-color: rgba(16, 20, 16, 0.92);
 }
+/*  slider-bar */
 .slider-bar {
     -fx-alignment: center;
     -fx-background-color: white;
