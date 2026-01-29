@@ -10,8 +10,8 @@ module com.learnkorealanguage.app {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
-    requires java.net.http;
     requires org.kordamp.ikonli.fontawesome6;
+    requires java.net.http;
 
     opens com.learnkorealanguage.app to javafx.fxml;
     opens com.learnkorealanguage.app.view to javafx.fxml;
