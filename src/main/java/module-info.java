@@ -12,6 +12,10 @@ module com.learnkorealanguage.app {
     requires com.almasb.fxgl.all;
     requires org.kordamp.ikonli.fontawesome6;
     requires java.net.http;
+    requires jdk.jfr;
+    requires jakarta.persistence;
+    requires static lombok;
+    requires org.hibernate.orm.core;
 
     opens com.learnkorealanguage.app to javafx.fxml;
     opens com.learnkorealanguage.app.view to javafx.fxml;

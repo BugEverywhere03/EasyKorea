@@ -1,7 +1,5 @@
 package com.learnkorealanguage.app.config;
 
-import com.learnkorealanguage.app.ultil.GlobalException;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -16,7 +14,7 @@ public class GlobalConfig {
              System.out.println(ioe.getMessage());
          }
     }
-    public static String getProperties(String key){
+    public static String getProperty(String key){
         return properties.getProperty(key);
     }
 }

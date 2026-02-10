@@ -15,9 +15,7 @@
     -fx-font-family: 'Logo';
     -fx-font-weight: bold;
     -fx-font-size: 20px;
-    -fx-background-color: rgb( 16, 20, 16);
-    -fx-fill: #FFFFFF;
-    -fx-opacity: 0.9;
+    -fx-background-color: rgba( 18, 20, 18, 1);
 }
 /* info-container */
 .info-container {
@@ -26,42 +24,91 @@
     -fx-padding: 10px;
 }
 .main-title {
+    -fx-text-fill: rgb(222, 222, 222);
     -fx-font-size: 32px;
     -fx-font-family: 'Logo';
     -fx-font-weight: bold;
 }
 /* Style for label */
 .text-label {
-    -fx-fill: #FFFFFF;
-    -fx-font-size: 18px;
+    -fx-text-fill: rgb(225, 225, 225);
+    -fx-font-size: 16px;
     -fx-pref-width: 150px;
     -fx-min-width: 150px;
 }
 /* Style for text field */
 .input {
-    -fx-font-size: 18px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 15px;
     -fx-background-color: #dcdcdc;
-    -fx-border-radius: 5px;
-    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
     -fx-border-style: solid;
-    -fx-border-color: white;
+    -fx-border-color: #dcdcdc;
     -fx-pref-width: 80px;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill:  black;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.input:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-text-fill: #2C2C2C;
+    -fx-border-color: rgba(100, 149, 237, 0.5);
+    -fx-border-width: 2px;
 }
 
 /* Style for Login Button */
 .login-button {
     -fx-background-color: rgb(16, 20, 16);
     -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
     -fx-border-color: gray;
     -fx-border-style: solid;
     -fx-border-width: 1px;
+    -fx-text-fill: rgb(222, 222, 222);
+    -fx-focus-color: transparent;
+    -fx-faint-focus: transparent;
+    -fx-background-insets: 0;
 }
 
 .login-button:hover {
-    -fx-background-color: rgb(240, 240, 240);
-    -fx-text-fill: rgb(16, 20, 16);
+    -fx-background-color: rgba(240, 240, 240, 0.95);
     -fx-border-radius: 10px;
-    -fx-border-color: black;
+    -fx-text-fill: #0F0F0F;
+}
+
+.label-register {
+    -fx-text-fill: rgba(245, 245, 245, 0.95);
+    -fx-font-size: 14px;
+    -fx-font-family: "Logo";
+}
+
+.register-link {
+    -fx-text-fill: rgba(165, 185, 225, 0.95);
+    -fx-font-size: 15px;
+    -fx-font-family: "Logo";
+    -fx-font-weight: bold;
+}
+.register-link:hover {
+    -fx-text-fill: rgba(165, 200, 255, 1);
+    -fx-font-size: 15px;
+    -fx-font-family: "Logo";
+    -fx-font-weight: bold;
+    -fx-underline: false;
+}.register-link:pressed {
+    -fx-text-fill: rgba(165, 200, 255, 0.95);
+    -fx-font-size: 15px;
+    -fx-font-family: "Logo";
+    -fx-font-weight: bold;
+    -fx-underline: false;
+    -fx-border-width: 0;
+}.register-link:visited {
+    -fx-text-fill: rgba(165, 185, 225, 0.95);
+    -fx-font-size: 15px;
+    -fx-font-family: "Logo";
+    -fx-font-weight: bold;
+    -fx-underline: false;
     -fx-border-style: solid;
-    -fx-border-width: 1px;
+    -fx-border-width: 0;
 }

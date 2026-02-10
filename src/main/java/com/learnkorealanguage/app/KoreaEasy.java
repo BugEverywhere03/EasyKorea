@@ -22,16 +22,16 @@ public class KoreaEasy extends Application{
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.sizeToScene();
-            String iconPath = "com/learnkorealanguage/app/images/icon_app.png";
+            String iconPath = "/com/learnkorealanguage/app/images/icon_app.png";
             Image iconImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream(iconPath)));
             stage.getIcons().add(iconImage);
-            stage.initStyle(StageStyle.DECORATED);
+            stage.initStyle(StageStyle.UNDECORATED);
             stage.show();
         } catch (Exception e){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Error Notification");
-            alert.setContentText("Can't load Login Screen Because Error " + e.getMessage());
+            alert.setContentText("Can't load Login Screen Because Error " + e.getCause());
             alert.show();
         }
     }

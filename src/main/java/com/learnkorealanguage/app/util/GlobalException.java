@@ -1,7 +1,7 @@
-package com.learnkorealanguage.app.ultil;
+package com.learnkorealanguage.app.util;
 
 public class GlobalException extends Exception{
-    public GlobalException(){
+    public GlobalException() {
         super();
     }
     public GlobalException(String errorMessage){
