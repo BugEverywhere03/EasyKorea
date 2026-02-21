@@ -1,7 +1,7 @@
 package com.learnkorealanguage.app;
 
 import com.learnkorealanguage.app.constant.ViewPath;
-import com.learnkorealanguage.app.ultil.LoadParent;
+import com.learnkorealanguage.app.db.DBConnectionFactory;
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -18,7 +18,7 @@ public class KoreaEasy extends Application{
     @Override
     public void start(Stage stage){
         try {
-            Parent root = LoadParent.loadParent(ViewPath.LOGIN.getPath());
+            Parent root = com.learnkorealanguage.app.util.SceneLoader.loadScene(ViewPath.AUTH.getPath());
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.sizeToScene();
@@ -26,13 +26,20 @@ public class KoreaEasy extends Application{
             Image iconImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream(iconPath)));
             stage.getIcons().add(iconImage);
             stage.initStyle(StageStyle.UNDECORATED);
+            // Create a session factory
+            DBConnectionFactory.getDBSessionManager();
             stage.show();
         } catch (Exception e){
+            e.printStackTrace();
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Error Notification");
-            alert.setContentText("Can't load Login Screen Because Error " + e.getCause());
+            alert.setContentText("Can't load Login Screen Because Error " + e.getMessage());
             alert.show();
         }
+    }
+    @Override
+    public void stop(){
+        DBConnectionFactory.closeSessionFactory();
     }
 }

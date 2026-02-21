@@ -16,8 +16,10 @@ module com.learnkorealanguage.app {
     requires jakarta.persistence;
     requires static lombok;
     requires org.hibernate.orm.core;
+    requires java.naming;
 
     opens com.learnkorealanguage.app to javafx.fxml;
     opens com.learnkorealanguage.app.view to javafx.fxml;
+    opens com.learnkorealanguage.app.model to org.hibernate.orm.core;
     exports com.learnkorealanguage.app;
 }
