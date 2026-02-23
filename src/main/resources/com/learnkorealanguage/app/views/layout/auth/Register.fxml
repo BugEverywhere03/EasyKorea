@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -29,23 +30,28 @@
             </HBox.margin>
             <children>
                <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="text-label" text="Password" VBox.vgrow="ALWAYS" />
-               <TextField fx:id="txtUsername1" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="45.0" promptText="Enter your password" styleClass="input" />
+               <PasswordField fx:id="txtPassword" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="45.0" promptText="Enter your password" styleClass="input" />
             </children>
          </VBox>
       </children>
    </HBox>
     <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="120.0" prefWidth="200.0" spacing="10.0">
         <VBox alignment="CENTER_LEFT" prefHeight="120.0" prefWidth="100.0" spacing="10.0" styleClass="info-container" HBox.hgrow="ALWAYS">
-            <Label styleClass="text-label" text="Comfirm Password" VBox.vgrow="ALWAYS" />
-            <TextField fx:id="txtPassword" prefHeight="45.0" promptText="Enter your comfirm password" styleClass="input" />
+            <Label styleClass="text-label" text="Confirm Password" VBox.vgrow="ALWAYS" />
+            <PasswordField fx:id="txtConfirmPassword" prefHeight="45.0" promptText="Enter your confirm password" styleClass="input" />
         </VBox>
         <VBox.margin>
             <Insets />
         </VBox.margin>
     </HBox>
     <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="80.0" prefWidth="200.0">
-        <Button mnemonicParsing="false" prefWidth="150.0" styleClass="login-button" text="Register" />
+        <Button mnemonicParsing="false" onAction="#handlerRegisterAction" prefWidth="150.0" styleClass="login-button" text="Register" />
     </HBox>
+   <HBox fx:id="messageBox" alignment="CENTER" maxHeight="-Infinity" prefHeight="40.0" prefWidth="200.0">
+      <children>
+         <Label fx:id="lblMessage" maxHeight="-Infinity" prefHeight="40.0" />
+      </children>
+   </HBox>
     <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
         <VBox.margin>
             <Insets />

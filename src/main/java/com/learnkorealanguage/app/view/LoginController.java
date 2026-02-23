@@ -1,9 +1,13 @@
 package com.learnkorealanguage.app.view;
 
+import com.learnkorealanguage.app.viewmodel.LoginViewModel;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Hyperlink;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.HBox;
 import lombok.Setter;
 
 import java.net.URL;
@@ -14,12 +18,22 @@ public class LoginController implements Initializable {
     @FXML
     private TextField txtUsername;
     @FXML
-    private TextField txtPassword;
+    private PasswordField txtPassword;
     @FXML
     private Hyperlink registerHyperLink;
-
+    @FXML
+    private HBox errorBox;
+    @FXML
+    private Label lblErrorMessage;
     @Setter
     private Runnable onSwitchToRegister;
+
+
+    private final LoginViewModel loginViewModel;
+
+    public LoginController(){
+        loginViewModel = new LoginViewModel();
+    }
 
 
     @Override
@@ -30,6 +44,13 @@ public class LoginController implements Initializable {
                 }
             }
         );
+
+        // Binding properties
+        txtPassword.textProperty().bindBidirectional(loginViewModel.getPassword());
+        txtUsername.textProperty().bindBidirectional(loginViewModel.getUserName());
+        lblErrorMessage.textProperty().bindBidirectional(loginViewModel.getErrorMessage());
+        errorBox.setVisible(true);
+        errorBox.setManaged(false);
     }
 
 

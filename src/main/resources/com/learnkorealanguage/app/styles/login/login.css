@@ -99,14 +99,16 @@
     -fx-font-family: "Logo";
     -fx-font-weight: bold;
     -fx-underline: false;
-}.register-link:pressed {
+}
+.register-link:pressed {
     -fx-text-fill: rgba(165, 200, 255, 0.95);
     -fx-font-size: 15px;
     -fx-font-family: "Logo";
     -fx-font-weight: bold;
     -fx-underline: false;
     -fx-border-width: 0;
-}.register-link:visited {
+}
+.register-link:visited {
     -fx-text-fill: rgba(165, 185, 225, 0.95);
     -fx-font-size: 15px;
     -fx-font-family: "Logo";
@@ -114,3 +116,19 @@
     -fx-underline: false;
     -fx-border-width: 0;
 }
+/* Message Box */
+.message-box-success {
+    -fx-padding: 5px;
+    -fx-background-color: #FFF;
+    -fx-text-fill: rgba(100, 255, 100, 0.1);
+    -fx-font-size: 13px;
+    -fx-font-family: "Logo";
+}
+.error-message {
+    -fx-padding: 5px;
+    -fx-background-color: #FFF;
+    -fx-text-fill: rgba(255, 100, 100, 0.95);
+    -fx-font-size: 13px;
+    -fx-font-family: "Logo";
+}
+/* */
