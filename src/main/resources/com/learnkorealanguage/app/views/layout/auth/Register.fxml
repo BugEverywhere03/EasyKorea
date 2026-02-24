@@ -49,7 +49,7 @@
     </HBox>
    <HBox fx:id="messageBox" alignment="CENTER" maxHeight="-Infinity" prefHeight="40.0" prefWidth="200.0">
       <children>
-         <Label fx:id="lblMessage" maxHeight="-Infinity" prefHeight="40.0" />
+         <Label fx:id="lblMessage" maxHeight="-Infinity" prefHeight="40.0" text="Message" />
       </children>
    </HBox>
     <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">

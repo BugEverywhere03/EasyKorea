@@ -1,6 +1,6 @@
 package com.learnkorealanguage.app.constant;
 
-public enum AuthResult {
+public enum RegisterResult {
     REGISTER_SUCCESS,
     INVALID_USERNAME,
     INVALID_PASSWORD,

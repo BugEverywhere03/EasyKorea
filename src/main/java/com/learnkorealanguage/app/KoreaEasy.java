@@ -2,6 +2,7 @@ package com.learnkorealanguage.app;
 
 import com.learnkorealanguage.app.constant.ViewPath;
 import com.learnkorealanguage.app.db.DBConnectionFactory;
+import com.learnkorealanguage.app.util.SceneManager;
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -18,14 +19,13 @@ public class KoreaEasy extends Application{
     @Override
     public void start(Stage stage){
         try {
-            Parent root = com.learnkorealanguage.app.util.SceneLoader.loadScene(ViewPath.AUTH.getPath());
-            Scene scene = new Scene(root);
+            Scene scene = SceneManager.initScene(ViewPath.HOME.getPath());
             stage.setScene(scene);
             stage.sizeToScene();
             String iconPath = "/com/learnkorealanguage/app/images/icon_app.png";
             Image iconImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream(iconPath)));
             stage.getIcons().add(iconImage);
-            stage.initStyle(StageStyle.UNDECORATED);
+            //stage.initStyle(StageStyle.UNDECORATED);
             // Create a session factory
             DBConnectionFactory.getDBSessionManager();
             stage.show();

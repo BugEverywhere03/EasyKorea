@@ -117,18 +117,24 @@
     -fx-border-width: 0;
 }
 /* Message Box */
-.message-box-success {
+.message-box{
     -fx-padding: 5px;
-    -fx-background-color: #FFF;
-    -fx-text-fill: rgba(100, 255, 100, 0.1);
-    -fx-font-size: 13px;
-    -fx-font-family: "Logo";
+    -fx-background-color: #E6F4EA;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-color: rgba( 18, 20, 18, 1);
+    -fx-border-width: 1px;
 }
-.error-message {
-    -fx-padding: 5px;
-    -fx-background-color: #FFF;
+
+/* Message Label*/
+
+.message-label-error {
     -fx-text-fill: rgba(255, 100, 100, 0.95);
     -fx-font-size: 13px;
     -fx-font-family: "Logo";
 }
-/* */
+.message-label-success {
+    -fx-text-fill: #2E7D32;
+    -fx-font-size: 13px;
+    -fx-font-family: "Logo";
+}
